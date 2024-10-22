@@ -48,4 +48,5 @@ if st.button('Predict'):
     result = rf.predict(user_data)
     st.subheader('Your Report:')
     output = 'You are not Diabetic' if result[0] == 0 else 'You are Diabetic'
+    st.title(output)
    
